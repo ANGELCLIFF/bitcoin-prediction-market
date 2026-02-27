@@ -1,0 +1,32 @@
+{
+  "name": "bitcoin-prediction-market-frontend",
+  "version": "1.0.0",
+  "description": "Bitcoin-native prediction market frontend — decentralized BTC/ETH price markets on OPNet",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@btc-vision/bitcoin": "latest",
+    "@btc-vision/opwallet": "latest",
+    "@btc-vision/transaction": "latest",
+    "opnet": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  }
+}

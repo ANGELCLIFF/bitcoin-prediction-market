@@ -1,0 +1,8 @@
+node_modules/
+contracts/node_modules/
+frontend/node_modules/
+contracts/build/
+frontend/dist/
+.env
+frontend/.env
+*.local

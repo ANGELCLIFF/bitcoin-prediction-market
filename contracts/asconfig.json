@@ -1,0 +1,30 @@
+{
+  "targets": {
+    "release": {
+      "outFile": "build/PredictionMarket.wasm",
+      "textFile": "build/PredictionMarket.wat",
+      "sourceMap": false,
+      "optimizeLevel": 3,
+      "shrinkLevel": 2,
+      "converge": false,
+      "noAssert": false
+    },
+    "debug": {
+      "outFile": "build/PredictionMarket.debug.wasm",
+      "textFile": "build/PredictionMarket.debug.wat",
+      "sourceMap": true,
+      "debug": true
+    }
+  },
+  "options": {
+    "bindings": "esm",
+    "transform": ["@btc-vision/opnet-transform"],
+    "exportRuntime": false,
+    "runtime": "stub",
+    "lib": [
+      "./node_modules/@btc-vision/btc-runtime/runtime"
+    ],
+    "use": ["abort=~lib/builtins/abort"]
+  },
+  "entries": ["./src/contracts/index.ts"]
+}
