@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@btc-vision/bitcoin": "latest",
-    "@btc-vision/opwallet": "latest",
     "@btc-vision/transaction": "latest",
     "opnet": "latest",
     "react": "^18.3.1",
